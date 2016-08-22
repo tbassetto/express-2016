@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='x-ua-compatible', content='ie=edge')
+    - var pageTitle = pageTitle ? pageTitle + ' — ' + mainTitle : mainTitle
+    - var socialTitle = pageTitle || mainTitle
+    - var description = description || mainDescription
+    title= pageTitle
+    meta(name='description', content=description)
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(property='og:title', content=socialTitle)
+    meta(property='og:description', content=description)
+    if image
+      meta(property='og:image', content=image)
+    meta(property='og:url', content=currentUrl)
+    meta(property='og:type', content='website')
+    meta(property='og:site_name', content=mainTitle)
+    meta(property='og:locale', content='en_US')
+    meta(property='article:author', content=author)
+    meta(name='twitter:title', content=socialTitle)
+    meta(name='twitter:description', content=description)
+    meta(name='twitter:image', content=currentUrl)
+    if image
+      meta(name='twitter:card', content=image)
+    meta(name='twitter:site', content='@tbassetto')
+    meta(name='twitter:creator', content='@tbassetto')
+    link(rel='apple-touch-icon', href='apple-touch-icon.png')
+    link(rel='stylesheet', href='/css/styles.css')
+  body(class=bodyCss)
+    header
+      a(href='/') Home
+      nav
+        ul
+          li: a(href='/blog') Articles
+          li: a(href='/about') About me
+    block content
+    footer
+      p My name is Thomas
+    script.
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+    script(src='https://www.google-analytics.com/analytics.js', async, defer)

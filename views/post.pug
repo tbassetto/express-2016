@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= metadata.title
+  p
+    date= metadata.date
+  if metadata.tags
+    ul
+      each tag in metadata.tags
+        li: kbd= tag
+  hr
+  div!= html
