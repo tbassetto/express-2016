@@ -17,28 +17,28 @@
     "autoprefixer-stylus": "^0.11.0",
     "compression": "^1.6.2",
     "express": "^4.14.0",
-    "gray-matter": "^2.0.2",
+    "gray-matter": "^2.1.0",
     "helmet": "^3.1.0",
-    "highlight.js": "^9.7.0",
+    "highlight.js": "^9.8.0",
     "jade": "^1.11.0",
-    "lodash": "^4.16.4",
-    "markdown-it": "^8.0.0",
-    "moment": "^2.15.1",
+    "lodash": "^4.17.2",
+    "markdown-it": "^8.2.1",
+    "moment": "^2.17.1",
     "normalize.css": "^5.0.0",
     "pug": "^2.0.0-beta6",
     "slug": "^0.9.1",
     "stylus": "^0.54.5"
   },
   "devDependencies": {
-    "eslint": "^3.8.0",
+    "eslint": "^3.12.0",
     "eslint-config-airbnb-base": "^10.0.1",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-node": "^3.0.3",
+    "eslint-plugin-node": "^3.0.5",
     "nodemon": "^1.11.0",
     "pug-lint": "^2.3.0",
     "pug-lint-config-clock": "^2.0.0"
   },
   "engines": {
-    "node": ">=4"
+    "node": ">=6"
   }
 }
